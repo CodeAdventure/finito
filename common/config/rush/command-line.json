@@ -30,6 +30,13 @@
       "shellCommand": "prettier . --write"
     },
     {
+      "name": "test",
+      "commandKind": "bulk",
+      "summary": "This command runs tests for each project",
+      "safeForSimultaneousRushProcesses": true,
+      "enableParallelism": true
+    },
+    {
       "name": "build:watch",
       "commandKind": "bulk",
       "summary": "Build projects and watch for changes",
