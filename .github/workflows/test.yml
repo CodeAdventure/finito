@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: "14.17.3"
       - name: Check Changelog
-        run: node common/scripts/install-run-rush.js change -b main -v --no-fetch
+        run: node common/scripts/install-run-rush.js change -v --no-fetch
       - name: Install Rush
         run: rush install
       - name: Run Tests
