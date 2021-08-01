@@ -1,6 +1,20 @@
 {
-  "name": "svelte-context-stores",
+  "name": "@finito/svelte-context-stores",
   "entries": [
+    {
+      "version": "0.1.1",
+      "tag": "@finito/svelte-context-stores_v0.1.1",
+      "date": "Sun, 01 Aug 2021 17:56:50 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Properly scope package and add module entry points",
+            "author": "Dominik Guzei <dominik.guzei@gmail.com>",
+            "commit": "27b4be4ba3fc2d082c6c82fc322928bfd26aa3fd"
+          }
+        ]
+      }
+    },
     {
       "version": "0.1.0",
       "tag": "svelte-context-stores_v0.1.0",
