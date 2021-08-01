@@ -16,6 +16,6 @@ jobs:
       - name: Install Rush
         run: node common/scripts/install-run-rush.js install
       - name: Build
-        run: rush build
+        run: node common/scripts/install-run-rush.js build
       - name: Publish
-        run: rush publish --apply --publish --npm-auth-token ${{ secrets.NPM_AUTH_TOKEN }} --add-commit-details --set-access-level public
+        run: node common/scripts/install-run-rush.js publish --apply --publish --npm-auth-token ${{ secrets.NPM_AUTH_TOKEN }} --add-commit-details --set-access-level public
