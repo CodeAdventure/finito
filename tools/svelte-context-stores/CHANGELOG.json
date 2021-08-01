@@ -2,6 +2,20 @@
   "name": "@finito/svelte-context-stores",
   "entries": [
     {
+      "version": "0.1.2",
+      "tag": "@finito/svelte-context-stores_v0.1.2",
+      "date": "Sun, 01 Aug 2021 19:04:41 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Use tsup to build typescript library",
+            "author": "Dominik Guzei <dominik.guzei@gmail.com>",
+            "commit": "d32ae207ed7f9dbbfbb1d27ca1172d5e7cfc522d"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.1.1",
       "tag": "@finito/svelte-context-stores_v0.1.1",
       "date": "Sun, 01 Aug 2021 17:56:50 GMT",

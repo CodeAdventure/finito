@@ -1,6 +1,13 @@
 # Change Log - @finito/svelte-context-stores
 
-This log was last generated on Sun, 01 Aug 2021 17:56:50 GMT and should not be manually modified.
+This log was last generated on Sun, 01 Aug 2021 19:04:41 GMT and should not be manually modified.
+
+## 0.1.2
+Sun, 01 Aug 2021 19:04:41 GMT
+
+### Patches
+
+- Use tsup to build typescript library
 
 ## 0.1.1
 Sun, 01 Aug 2021 17:56:50 GMT
