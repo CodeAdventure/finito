@@ -11,6 +11,33 @@
    * "rush my-global-command --help".
    */
   "commands": [
+    {
+      "name": "pretty-quick",
+      "commandKind": "global",
+      "summary": "Used by the pre-commit Git hook. This command invokes Prettier to reformat staged changes.",
+      "safeForSimultaneousRushProcesses": true,
+      "autoinstallerName": "rush-prettier",
+      // This will invoke common/autoinstallers/rush-prettier/node_modules/.bin/pretty-quick
+      "shellCommand": "pretty-quick --staged"
+    },
+    {
+      "name": "prettier",
+      "commandKind": "global",
+      "summary": "This command invokes Prettier to reformat all files",
+      "safeForSimultaneousRushProcesses": true,
+      "autoinstallerName": "rush-prettier",
+      // This will invoke common/autoinstallers/rush-prettier/node_modules/.bin/prettier
+      "shellCommand": "prettier . --write"
+    },
+    {
+      "name": "build:watch",
+      "commandKind": "bulk",
+      "summary": "Build projects and watch for changes",
+      "description": "For details, see the article https://rushjs.io/pages/advanced/watch_mode/",
+      "incremental": true, // use incremental build logic (important)
+      "enableParallelism": true,
+      "watchForChanges": true // Enable "watch mode"
+    }
     // {
     //   /**
     //    * (Required) Determines the type of custom command.
