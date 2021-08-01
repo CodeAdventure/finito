@@ -18,6 +18,6 @@ jobs:
       - name: Install Rush
         run: node common/scripts/install-run-rush.js install
       - name: Check Changelog
-        run: rush change -v --no-fetch
+        run: node common/scripts/install-run-rush.js change -v --no-fetch
       - name: Run Tests
-        run: rush test
+        run: node common/scripts/install-run-rush.js test
