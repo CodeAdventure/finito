@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsup",
     "build:watch": "tsup",
-    "test": "jest",
+    "test": "jest --reporters=jest-silent-reporter",
     "prepublishOnly": "tsup"
   },
   "devDependencies": {
@@ -15,6 +15,7 @@
     "@testing-library/svelte": "3.0.3",
     "@types/jest": "26.0.24",
     "jest": "26.6.3",
+    "jest-silent-reporter": "0.5.0",
     "microbundle": "0.13.3",
     "svelte-jester": "1.7.0",
     "svelte-preprocess": "4.7.4",
