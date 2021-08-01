@@ -1,0 +1,17 @@
+{
+  "name": "svelte-context-stores",
+  "entries": [
+    {
+      "version": "0.1.0",
+      "tag": "svelte-context-stores_v0.1.0",
+      "date": "Sun, 01 Aug 2021 17:07:00 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add basic api for setting and and getting writable stores with svelte context"
+          }
+        ]
+      }
+    }
+  ]
+}

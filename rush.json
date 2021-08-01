@@ -383,7 +383,7 @@
    */
   "projects": [
     {
-      "packageName": "svelte-context-stores",
+      "packageName": "@finito/svelte-context-stores",
       "projectFolder": "tools/svelte-context-stores",
       "reviewCategory": "tools",
       "shouldPublish": true

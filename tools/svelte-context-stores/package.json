@@ -1,6 +1,6 @@
 {
-  "name": "svelte-context-stores",
-  "version": "0.0.1",
+  "name": "@finito/svelte-context-stores",
+  "version": "0.1.0",
   "source": "src/index.ts",
   "scripts": {
     "build": "tsc && vite build",
