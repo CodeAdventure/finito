@@ -1,4 +1,4 @@
-name: Publish
+name: On Pull Request Merge
 on:
   push:
     branches:
@@ -15,9 +15,9 @@ jobs:
         uses: actions/checkout@v2
       - name: Install Rush
         run: node common/scripts/install-run-rush.js install
-      - name: Build
+      - name: Rush Build
         run: node common/scripts/install-run-rush.js build
-      - name: Publish
+      - name: Rush Publish
         run: node common/scripts/install-run-rush.js publish --apply --publish --npm-auth-token ${{ secrets.NPM_AUTH_TOKEN }} --add-commit-details --set-access-level public
       - name: Commit New Version & Changelogs
         uses: EndBug/add-and-commit@v7
