@@ -9,8 +9,8 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
-      - name: Fetch latest commit of all branches
-        run: git fetch origin main
+        with:
+          fetch-depth: 0
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
