@@ -1,0 +1,23 @@
+name: Verify
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14.17.3"
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Install Rush
+        run: node common/scripts/install-run-rush.js install
+      - name: Check Changelog
+        run: rush change -v --no-fetch
+      - name: Run Tests
+        run: rush test
