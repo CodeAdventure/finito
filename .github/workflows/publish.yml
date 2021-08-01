@@ -1,6 +1,6 @@
-name: Verify
+name: Publish
 on:
-  pull_request:
+  push:
     branches:
       - main
 jobs:
@@ -13,11 +13,9 @@ jobs:
           node-version: "14.17.3"
       - name: Checkout Repo
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
       - name: Install Rush
         run: node common/scripts/install-run-rush.js install
-      - name: Check Changelog
-        run: rush change -v --no-fetch
-      - name: Run Tests
-        run: rush test
+      - name: Build
+        run: rush build
+      - name: Publish
+        run: rush publish --apply --publish --npm-auth-token ${{ secrets.NPM_AUTH_TOKEN }} --add-commit-details --set-access-level public
