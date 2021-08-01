@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@finito/svelte-context-stores",
+      "comment": "Improve package publishing",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@finito/svelte-context-stores"
+}
